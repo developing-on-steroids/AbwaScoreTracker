@@ -1,0 +1,51 @@
+body {
+    background-color: #30475E;
+    text-align: center;
+    color: #F5F5F5;
+    font-family: 'Bungee', cursive;
+}
+
+.main_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    min-height: 500px;
+    border: solid 5px black;
+    margin: 5%;
+    margin-top: 0;
+}
+
+.scoreCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 100px;
+    color: #30475E;
+    width: 250px;
+    height: 400px;
+}
+
+.scoreDiv button {
+    font-family: 'Bungee', cursive;
+    background-color: #F5F5F5;
+    color: #30475E;
+    margin: 10% 0;
+    width: 100px;
+}
+
+.scoreDiv button:hover {
+    background-color: #F05454;
+    color: #F5F5F5;
+    cursor: pointer;
+}

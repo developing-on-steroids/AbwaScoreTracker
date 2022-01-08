@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abwa Score Counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Abwa Score Tracker</h1>
+
+    <div class="main_cont">
+        <div id="score1" class="scoreDiv">
+            <h1>Abbas</h1>
+            <div class="scoreCard">
+                <p id="scoreCard1"></p>
+            </div>
+            <button id="scoreCard1Btn">+ 1</button>
+        </div>
+
+        <div id="score2" class="scoreDiv">
+            <h1>Arwa</h1>
+            <div class="scoreCard">
+                <p id="scoreCard2"></p>
+            </div>
+            <button id="scoreCard2Btn">+ 1</button>
+        </div>
+    </div>
+
+    <script>
+        var abbasScore = 38;
+        var awraScore = 37;
+
+        document.getElementById('scoreCard1').innerHTML = abbasScore;
+        document.getElementById('scoreCard2').innerHTML = awraScore;
+
+        document.getElementById('scoreCard1Btn').addEventListener('click', function(){
+            abbasScore=abbasScore+1;
+            document.getElementById('scoreCard1').innerHTML = abbasScore;
+        })
+
+        document.getElementById('scoreCard2Btn').addEventListener('click', function(){
+            awraScore=awraScore+1;
+            document.getElementById('scoreCard2').innerHTML = awraScore;
+        })
+
+    </script>
+
+</body>
+
+</html>
